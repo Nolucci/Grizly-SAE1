@@ -29,7 +29,7 @@
           <td>Maxime</td>
           <td>SARDOIS</td>
           <td>Dev Polyvalent</td>
-					<td><a href=""> Profil </a></td>
+					<td><a href="https://github.com/Corsair28"> Profil </a></td>
         </tr>
 				<tr>
 					<td>Elliott</td>

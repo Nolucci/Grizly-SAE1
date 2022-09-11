@@ -48,8 +48,7 @@
 		<p>Les 4 membres du groupes possèdent Discord et peuvent être contactés à tout moment sur, ou depuis, le serveur créé par le BDE pour les étudiants du bâtiment K de l'IUT ou bien encore sur le serveur Grizly. Les mails Zimbra sont aussi ouverts à tout moment depuis l'ENT de l'IUT.</p>
     <h3>IGG 3 : Réunions</h3>
   <p>Les rendez-vous doivent être programmés à l'avance et les horaires doivent être respectés. <br> Toutes traces positives comme négatives seront marqués sur le fichier Word prévu à l'occasion du SAE en cours. <br> Le fichier Word sera mis à jour régulièrement et devra respecter des codes précis afin de pouvoir s'y retrouver au mieux et faciliter la lecture 
-		<h3>IGG 4 : Rejoindre Grizly</3>
-		<p>Si vous voulez rejoindre notre groupe : <ul>- Faire une demande dans le salon discord du serveur Grizly prévu à cet effet. <br> ou <br>- Contacter les membres du groupe en DM Discord </ul>
-	</p>
+	  <h3>IGG 4 : Rejoindre Grizly</h3>
+	  <p>Si vous voulez rejoindre notre groupe : </p> <ul>- Faire une demande dans le salon discord du serveur Grizly prévu à cet effet. <br> ou <br>- Contacter les membres du groupe en DM Discord </ul>
 	</body>
 </html>

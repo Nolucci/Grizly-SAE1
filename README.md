@@ -16,31 +16,26 @@
         <tr>
           <th>Prénom</th>
           <th>Nom</th>
-          <th>Spécialisations Principales</th>
 					<th>GitHub</th>
         </tr>
         <tr>
           <td>Baptiste</td>
           <td>LESPINASSE</td>
-          <td>Gestion de projet</td>
 					<td><a href="https://github.com/baptistelsp"> Profil </a></td>
         </tr>
         <tr>
           <td>Albin</td>
           <td>CAMINADE</td>
-          <td>Dev Polyvalent</td>
 					<td><a href="https://github.com/Corsair28"> Profil </a></td>
         </tr>
 	<tr>
 	<td>Elliott</td>
 	<td>DE LUCA</td>
-	<td>Dev Polyvalent (+ Frontend)</td>
 	<td><a href="https://github.com/Pilgrimeru"> Profil </a></td>
 	</tr>
 	<tr>
 	<td>Nathan</td>
 	<td>FRANCESKIN</td>
-	<td>Dev Polyvalent (+ Backend)</td>
 	<td><a href="https://github.com/TechnowlZ"> Profil </a></td>
 	</tr>
 		</table>

@@ -29,32 +29,37 @@
      <!-- <img src="res/placeholder-main.jpg" alt="main" />-->
      <div class="title">Rejoignez le monde Steampunk</div>
    </div>
-   <p><em>Futur alternatif où la technologie a pris le chemin du steampunk.</em>
+   <div class="synopsis">
+    <p><em>Dans un futur alternatif où la technologie a pris le chemin du steampunk...</em></p>
     
-    Jugés plus sûr et moins coûteux, les dirigeables contrôlés par des système robotisés sont préférés aux avions. 
+    <p>Jugés moins coûteux, les dirigeables, contrôlés par des système robotisés, sont préférés aux avions. 
     Moins consommateurs de carburants mais moins rapides, ils deviennent les numéros 1 du déplacement aérien dans un monde ou l'on ne souhaite que paix et tranquilité.
     En partance pour SteamCity, vous embarquez avec vos amis à bord du ballon dirigeable "Linouxyboubountou".
     </p><p>
     Après quelques heures de vol, une sirène retentit... Un incendie ?! Maintenant ?! Alors que vous étiez en train de faire votre meilleure sieste !
     </p><p>
     Vous apprenez alors, grâce à des hauts parleurs, qu'une canalisation importante reliant la salle des machines et les reserves de gaz vient de céder.
-    En plus du risque de crash qui devient de plus en plus important, le carburant toxique et hautement inflammable risque très fortement de compromettre votre voyage 
-    voire même votre vie ! 
-  </p><p>
-    Les portes coupe-feux se referment et votre groupe se retrouve divisé en deux. Vous devez utiliser la communication radio pour essayer de vous réunir le plus rapidement possible. 
-    Vous vous rappelez la présence de parachutes de rechanges situés dans la cabine de pilotage indiqué lors de l'embarquation. 
-    Certains d'entre vous possèdent des compétences en mécanique et essayent donc de réparer les fuites
+    En plus du risque de crash qui devient de plus en plus important, le carburant toxique et hautement inflammable risque très fortement de compromettre votre voyage, 
+    voire même... votre vie ! 
+    </p><p>
+    Les portes coupe-feux se referment et votre groupe se retrouve divisé en deux. Vous devez utiliser la radio locale intégrée au dirigeable pour essayer de vous réunir 
+    le plus rapidement possible. Votre chance de sortie sera la présence de parachutes situés dans la cabine de pilotage indiqué lors de l'embarquation. 
+    Certains d'entre vous possèdent des compétences en mécanique et vous établissez un plan infaIlli-be. Vous décidez alors de vous diviser en deux groupes commandos, 
+    le premier étant chargé de réparer la fuite, et le second de ramener les parachutes si la fuite n'est pas réparée.
+
+    <p><strong>Les synapses reserrés, la communication sera votre clé de sortie.</strong></p>    
+
+
     
-    Votre objectif principal est de survivre grâce aux parachutes de rechange qui se trouvent dans le cabine de pilotage, ou de réparer le dirigeable.
-    Le processus se divise en quatre parties, la dernière étant optionnelle, en fonction de la conclusion que vous choisissez. Dans la première partie,
+    
+    <!--Le processus se divise en quatre parties, la dernière étant optionnelle, en fonction de la conclusion que vous choisissez. Dans la première partie,
     vous devez utiliser le travail d'équipe pour réparer la fuite de gaz et débloquer les portes bloquées afin de vous unir. 
     La deuxième partie consistera à résoudre des énigmes en ouvrant la cabine de pilotage. Ensuite, vous devrez essayer de communiquer avec le terrain, 
     en demandant de l'aide et des directives pour la suite. Dans la dernière partie, vous avez le choix entre prendre un risque et essayer de réparer les dégâts 
-    en poursuivant votre vol, ou chercher des parachutes, mais attention, il n'y en aura peut-être pas assez pour tout le monde.
-  </p><p>
-    Aucune machine n'est infaillible, vous en êtes la preuve vivante !
-  </p>
-      <!--Information sur le scenario, lieux, personnage, ambiance-->
+    en poursuivant votre vol, ou chercher des parachutes, mais attention, il n'y en aura peut-être pas assez pour tout le monde.-->
+    </p>
+  </div>
+  <!--Information sur le scenario, lieux, personnage, ambiance-->
       <!-- Tu nous fais des border-radius l'artiste -->
     <div id="second">
       <article id="art1">
@@ -105,21 +110,24 @@
     <!-- Rendu dans ce style: https://prnt.sc/Vs6o7Is305Zq -->
     <div class="showUp">
       <h2>Votre aventure en image</h2>
-      <div class="twoColumn">
+      <div class="columns">
+        <div class="column col1">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ioXEprtpx8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="quatuor">
-          <img src="res/mini1"/>
-          <img src="res/mini2"/>
-          <img src="res/mini3"/>
-          <img src="res/mini4"/>
+      </div>
+        <div class="column col2">
+          <img src="res/mini1.jpg"/>
+          <img src="res/mini2.jpg"/>
         </div>
+        <div class="column col3">
+          <img src="res/mini3.jpg"/>
+          <img src="res/mini4.jpg"/>
       </div>
     </div>
 
 
     <!-- Rendu dans ce style https://prnt.sc/rArHdYP4pd0n -->
     <div class="customerRating">
-      <h2>Ils ont aimé la fuite de gaz</h2>
+      <h2>Ils ont aimé la fuite de gaz !</h2>
       
       <div class="ratingsParts">
 
@@ -128,7 +136,13 @@
           <div class="barInfo">
             <img class="pp" src="https://media.gqmagazine.fr/photos/62738bcef1d076715848edfa/16:9/w_2560%2Cc_limit/GettyImages-1395371348.jpg"/>
             <div class="column">
-              <div class="ratingBar"></div>
+              <div class="ratingBar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
               <div class="customerTitle">OSKOUR JSUIS BLOKER</div>
             </div>
           </div>
@@ -143,8 +157,14 @@
           <div class="barInfo">
             <img class="pp" src="https://pbs.twimg.com/profile_images/890054846933483520/bEVumq8a_400x400.jpg"/>
             <div class="column">
-              <div class="ratingBar"></div>
-              <div class="customerTitle"></div>
+              <div class="ratingBar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="customerTitle"> J'ai rien compris ?</div>
             </div>
           </div>
 
@@ -155,24 +175,36 @@
         <div class="customerCard">
 
           <div class="barInfo">
-            <img class="pp" src="https://pbs.twimg.com/profile_images/890054846933483520/bEVumq8a_400x400.jpg"/>
+            <img class="pp" src="https://www.superyachtfan.com/wp-content/uploads/2020/11/Larry-Silverstein.jpg"/>
             <div class="column">
-              <div class="ratingBar"></div>
-              <div class="customerTitle"></div>
+              <div class="ratingBar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="customerTitle">J'ai trouvé la technique</div>
             </div>
           </div>
 
-          <p> Que de surprise dans ce dirigeable ! Je m'attendais à un voyage pépère puis d'un seul coup, BAM, sans prévenir un canalisation qui pète !? Heureusement qu'il y avait des parachutes ahah !</p>
+          <p>je le savais depuis le début ! C'était sûr que ça tiendrai pas ! Un bateau volant en bois ! Et puis quoi encore ? Heureusement que j'avais prévu mon parachute de secours, du coup jme suis baré sans les autres AHAH</p>
         </div>
 
 
         <div class="customerCard">
 
           <div class="barInfo">
-            <img class="pp" src="https://pbs.twimg.com/profile_images/890054846933483520/bEVumq8a_400x400.jpg"/>
+            <img class="pp" src="https://img-0.journaldunet.com/wqqB5hyWXIRpmixAXpbZfJUVhXc=/931x/smart/206e2137b616429dbdfb0260326abcdc/ccmcms-jdn/11547842.jpg"/>
             <div class="column">
-              <div class="ratingBar"></div>
-              <div class="customerTitle"></div>
+              <div class="ratingBar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <div class="customerTitle">Y a beaucoup de fumée non ?</div>
             </div>
           </div>
 
@@ -197,11 +229,13 @@
     <footer>
       <nav>
         <div><a href ="index.html#topbar">Début</a>
-        <a href ="index.html#title">Synopsis</a>
+        <a href ="index.html#synopsis">synopsis</a>
         <a href ="index.html#second">Déroulement</a>
         <a href ="index.html#third">Infos</a></div>
       </nav> 
+
+      <p>Escape Game de Baptiste Lespinasse, Elliott De Lucas, Nathan Franceskin, Albin Caminade (fais avec amour et aucun sexe car no homo ) </p>
+
     </footer>
-    <p>Escape Game de Baptiste Lespinasse, Elliott De Lucas, Nathan Franceskin, Albin Caminade (fais avec amour et aucun sexe car no homo ) </p>
   </body>
 </html>

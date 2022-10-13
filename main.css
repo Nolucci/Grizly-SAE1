@@ -1,7 +1,6 @@
-body{
+body {
   --main-color: #4287f5;
 }
-
 
 html,
 body {
@@ -39,23 +38,120 @@ body {
   height: 100%;
   color: white;
   text-decoration: none;
-  padding: 15px;
 }
 .right {
   position: relative;
   display: inline;
   float: right;
+  margin: auto 0;
 }
 .right a {
-  color: white !important;
-  text-decoration: none !important;
-  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  margin-left: 7px;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 .right a:hover {
-  color : var(--main-color) !important;
+  color: var(--main-color) !important;
 }
-
+/*synopsis*/
+.synopsis {
+  margin: 0 15px;
+}
 /*article*/
 img[alt="illu1"] {
   height: 100px;
+}
+/*Votre aventure en image*/
+.columns{
+  display: flex;
+}
+.column{
+  display: flex;
+  flex-flow: column wrap;
+}
+.col1{
+  height:300px;
+}
+.columns img{
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/*avis*/
+/*
+customerRating
+ratingsParts
+customerCard
+barInfo
+column
+*/
+
+.customerRating {
+  padding-top: 10px;
+  background-color: #ddd8d0;
+  height: min-content;
+}
+.customerRating h2 {
+  text-align: center;
+}
+
+.ratingsParts {
+  display: flex;
+  padding: 0 10%;
+}
+
+.customerCard {
+  flex: 50%;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.customerCard p {
+  text-overflow: ellipsis;
+  max-lines: 5;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.barInfo {
+  display: flex;
+}
+.customerTitle {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.pp {
+  border-radius: 10%;
+  flex: 20%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border: 40px;
+}
+
+.barInfo > .column {
+  flex: 75%;
+  margin-left: 10px;
+}
+
+/* Color for stars (customer rating) */
+.checked {
+  color: orange !important;
+}
+
+.fa {
+  color: white;
+  font-size: 25px;
+}
+
+footer {
+    padding-top: 20px;
+    margin: auto;
+    height: 80px;
+    text-align: center;
 }

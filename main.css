@@ -1,3 +1,8 @@
+body{
+  --main-color: #4287f5;
+}
+
+
 html,
 body {
   margin: 0;
@@ -8,22 +13,25 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 100%;
 }
-img[alt="illu1"] {
-    height: 100px;
-}
-#first{
-  background: url(res/placeholder-main.jpg) center/cover no-repeat fixed;
+#first {
+  background: url(res/placeholder-main.jpg) center/cover no-repeat;
   height: 800px;
-  color:white;
+  color: white;
+  margin-bottom: 20px;
 }
-.first p{
-  position:relative;
-  bottom: 0;
+.title {
+  position: relative;
+  width: fit-content;
+  top: 45%;
+  margin: auto;
+  font-size: 50px;
+  padding: 5px 10px;
+  background-color: black;
 }
 
 /*La topbar*/
 #topbar {
-  padding:20px;
+  padding: 20px;
   height: auto;
   background: #1a1818;
 }
@@ -31,18 +39,23 @@ img[alt="illu1"] {
   height: 100%;
   color: white;
   text-decoration: none;
-  padding : 15px;
+  padding: 15px;
 }
-.right{
-    position: relative;
-    display: inline;
+.right {
+  position: relative;
+  display: inline;
+  float: right;
+}
+.right a {
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 10px;
+}
+.right a:hover {
+  color : var(--main-color) !important;
+}
 
-}
-.right a{
-    color: white !important;
-    text-decoration: none !important;
-}
 /*article*/
 img[alt="illu1"] {
-    height: 100px;
+  height: 100px;
 }

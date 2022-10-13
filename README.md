@@ -26,8 +26,8 @@
 					<td><a href="https://github.com/baptistelsp"> Profil </a></td>
         </tr>
         <tr>
-          <td>Maxime</td>
-          <td>SARDOIS</td>
+          <td>Albin</td>
+          <td>CAMINADE</td>
           <td>Dev Polyvalent</td>
 					<td><a href="https://github.com/Corsair28"> Profil </a></td>
         </tr>

@@ -31,18 +31,18 @@
           <td>Dev Polyvalent</td>
 					<td><a href="https://github.com/Corsair28"> Profil </a></td>
         </tr>
-				<tr>
-					<td>Elliott</td>
-					<td>DE LUCA</td>
-					<td>Dev Polyvalent (+ Frontend)</td>
-					<td><a href="https://github.com/Pilgrimeru"> Profil </a></td>
-				</tr>
-				<tr>
-					<td>Nathan</td>
-					<td>FRANCESKIN</td>
-					<td>Dev Polyvalent (+ Backend)</td>
-					<td><a href="https://github.com/TechnowlZ"> Profil </a></td>
-				</tr>
+	<tr>
+	<td>Elliott</td>
+	<td>DE LUCA</td>
+	<td>Dev Polyvalent (+ Frontend)</td>
+	<td><a href="https://github.com/Pilgrimeru"> Profil </a></td>
+	</tr>
+	<tr>
+	<td>Nathan</td>
+	<td>FRANCESKIN</td>
+	<td>Dev Polyvalent (+ Backend)</td>
+	<td><a href="https://github.com/TechnowlZ"> Profil </a></td>
+	</tr>
 		</table>
 		<h3>IGG 2 : Contacts</h3>
 		<p>Les 4 membres du groupes possèdent Discord et peuvent être contactés à tout moment sur, ou depuis, le serveur créé par le BDE pour les étudiants du bâtiment K de l'IUT ou bien encore sur le serveur Grizly. Les mails Zimbra sont aussi ouverts à tout moment depuis l'ENT de l'IUT.</p>

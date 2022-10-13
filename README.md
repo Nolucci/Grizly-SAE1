@@ -26,7 +26,7 @@
         <tr>
           <td>Albin</td>
           <td>CAMINADE</td>
-					<td><a href="https://github.com/Corsair28"> Profil </a></td>
+					<td><a href=["https://github.com/camitons"]> Profil </a></td>
         </tr>
 	<tr>
 	<td>Elliott</td>

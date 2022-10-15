@@ -7,17 +7,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: white;
   font-family: Verdana, sans-serif;
   font-size: 100%;
 }
+
 #first {
   background: url(res/placeholder-main.jpg) center/cover no-repeat;
   height: 800px;
   color: white;
   margin-bottom: 20px;
 }
+
 .title {
   position: relative;
   width: fit-content;
@@ -34,17 +37,20 @@ body {
   height: auto;
   background: #1a1818;
 }
+
 .home {
   height: 100%;
   color: white;
   text-decoration: none;
 }
+
 .right {
   position: relative;
   display: inline;
   float: right;
   margin: auto 0;
 }
+
 .right a {
   color: white;
   text-decoration: none;
@@ -53,105 +59,129 @@ body {
   padding: 2px 5px;
   border-radius: 5px;
 }
+
 .right a:hover {
   color: var(--main-color) !important;
 }
+
 /*synopsis*/
 .synopsis {
   margin: 0 15px;
 }
+
 /*article*/
 img[alt="illu1"] {
   height: 100px;
 }
+
 /*Votre aventure en image*/
-.columns{
+.columns {
   display: flex;
 }
-.column{
+
+.column {
   display: flex;
   flex-flow: column wrap;
 }
-.col1{
-  height:300px;
+
+.col1 {
+  height: 300px;
 }
-.columns img{
+
+.columns img {
   height: 150px;
   width: 200px;
   object-fit: cover;
 }
 
 /*avis*/
-/*
-customerRating
-ratingsParts
-customerCard
-barInfo
-column
-*/
+
+@media screen and (max-width: 1000px) {
+  .card2 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card3 {
+    display: none !important;
+  }
+}
 
 .customerRating {
-  padding-top: 10px;
   background-color: #ddd8d0;
-  height: min-content;
+  padding: 10px 0;
 }
+
 .customerRating h2 {
   text-align: center;
+  margin: 0 0 10px 0;
 }
 
-.ratingsParts {
-  display: flex;
-  padding: 0 10%;
-}
-
-.customerCard {
-  flex: 50%;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.customerCard p {
-  text-overflow: ellipsis;
-  max-lines: 5;
-  text-align: justify;
+.avis-container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
   overflow: hidden;
+  margin: auto;
 }
 
-.barInfo {
-  display: flex;
-}
-.customerTitle {
-  margin-top: 5px;
-  font-size: 18px;
+.card {
+  max-width: 260px;
+  min-width: 150px !important;
+  margin: 5px 1%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(141, 137, 131, 0.301);
 }
 
-.pp {
-  border-radius: 10%;
-  flex: 20%;
-  height: 80px;
-  width: 80px;
+.info {
+  display: flex
+}
+
+.info img {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
   object-fit: cover;
-  border: 40px;
 }
 
-.barInfo > .column {
-  flex: 75%;
-  margin-left: 10px;
+.info>div {
+  margin: auto 0 auto 10px
 }
 
-/* Color for stars (customer rating) */
-.checked {
+.star-container {
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 3px;
+}
+
+.star {
+  color: white;
+  font-size: 20px;
+}
+
+.star.checked {
   color: orange !important;
 }
 
-.fa {
-  color: white;
-  font-size: 25px;
+.avis-title {
+  font-size: 18px;
 }
 
+.avis {
+  width: inherit;
+  overflow-wrap: break-word;
+  margin-block: 0;
+  padding-top: 5px;
+}
+
+/*footer*/
+
 footer {
-    padding-top: 20px;
-    margin: auto;
-    height: 80px;
-    text-align: center;
+  padding-top: 20px;
+  margin: auto;
+  height: 80px;
+  text-align: center;
 }

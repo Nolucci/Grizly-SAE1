@@ -6,22 +6,28 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </header>
 
-
 <head>
   <title>Steampunk</title>
 </head>
 
 <body>
-    <div id="topbar">
-      <a class="home" href="#home">Steampunk</a>
-      <div class="right">
-        <a href="#part1">Lien 1</a>
-        <a href="#part2">Lien 2</a>
-        <a href="#part3">Lien 3</a> <!-- mettre un numéro de téléphone qui s'affiche si on clique sur "telephone"-->
+  <div id="topbar">
+    <a class="home" href="#home">Steampunk</a>
+    <div class="right">
+      <div class="menu"><a href="#home">Accueil</a></div>
+      <div class="menu have-sub">
+        <a>Salles</a>
+        <div class="submenu">
+          <div><a href="#salle1">salle 1</a></div>
+          <div><a href="#salle2">salle 2</a></div>
+          <div><a href="#salle3">salle 3</a></div>
+        </div>
       </div>
+      <div class="menu"><a href="./contact.html">Contact</a></div>
     </div>
+  </div>
 
-  <div id="first">
+  <div id="home">
     <div class="title">Rejoignez le monde Steampunk</div>
   </div>
   <div class="synopsis">
@@ -66,48 +72,63 @@
   <!--Information sur le scenario, lieux, personnage, ambiance-->
   <!-- Tu nous fais des border-radius l'artiste -->
   <div id="second">
-    <article id="art1">
-      <img src="res/placeholder-main.jpg" alt="illu1" />
-      <div class="vertical">
-        <h3>Ambiance</h3>
+    <div id="tripleimg">
+      <h2>Salle 1</h2>
+      <p>Venez découvrir un futur alternatif où la technologie a pris le chemin du Steampunk.
+        Des dirigeables contrôlés par un système robotique sont utilisés à la place des avions pour transporter des
+        personnes par voie aérienne.</p>
+     
+      <div class="ctnThree">
+        <img src="res/placeholder-main.jpg" alt="illu1" />
+        <img src="res/placeholder-main.jpg" alt="illu1" />
+        <img src="res/placeholder-main.jpg" alt="illu1" />
+
+      </div>
+    </div>
+    
+    <article class="art1">
+      <div class="column cText">
+        <h2>Salle 2 </h2>
         <p>Venez découvrir un futur alternatif où la technologie a pris le chemin du Steampunk.
           Des dirigeables contrôlés par un système robotique sont utilisés à la place des avions pour transporter des
           personnes par voie aérienne.</p>
-        <button class="showMore">En savoir plus</button>
+          <button class="showMore">En savoir plus</button>
+      </div>
+      <div class="column cImg">
+        <img src="res/placeholder-main.jpg" alt="illu1" />
       </div>
     </article>
 
-    <article id="art2">
-      <div class="vertical">
-        <h3> minititre </h3>
-        <button class="showMore">En savoir plus</button>
-      </div>
-    </article>
 
-    <article id="art3">
-      <img src="res/placeholder-main.jpg" alt="illu1" />
-      <div class="vertical">
-        <h3> minititre </h3> <!-- jveux que le titre soit pas autant centré que le paragraphe  -->
-        <p> 3 jolies salles omg venez</p>
-        <button class="showMore">En savoir plus</button>
+    <article class="art1">
+      <div class="column cImg">
+        <img src="res/placeholder-main.jpg" alt="illu1" />
       </div>
+      <div class="column cText">
+        <h2>Salle 3 </h2>
+        <p>Venez découvrir un futur alternatif où la technologie a pris le chemin du Steampunk.
+          Des dirigeables contrôlés par un système robotique sont utilisés à la place des avions pour transporter des
+          personnes par voie aérienne.</p>
+          <button class="showMore">En savoir plus</button>
+      </div>
+
     </article>
   </div>
+
   <!-- Informations de bases sur l'orga-->
   <div id="third">
-    <article class="longDetail">
-      <h2>Rendez vous "adresse"</h2>
+    <hr>
+      <h3>Rendez vous "adresse"</h3>
       <p>
         Présentez vous par groupe de 4 à 8, pour une session de 1h30 afin de vous échappez du dirigeable.
         N'oubliez pas de prendre rendez vous par téléphone <a>ici</a>, devoir réparer le dirigeable pour les groupes
         choississant de sauter en parachute nous prend beaucoup de temps.
       </p>
-      <p>Tarifs : Gratos</p>
-    </article>
+      <hr>
   </div>
 
   <!-- Rendu dans ce style: https://prnt.sc/Vs6o7Is305Zq -->
-  <div class="containerAvtImg">
+  <div class="gallery-container">
     <h2>Votre aventure en image</h2>
     <div class="columns">
       <div class="column col1">
@@ -118,16 +139,16 @@
       </div>
       <div class="columns">
         <div class="column col2">
-          <img src="res/mini1.jpg" alt="1"/>
-          <img src="res/mini2.jpg" alt="2"/>
+          <a href="res/mini1.jpg"><img src="res/mini1.jpg" alt="1" /></a>
+          <a href="res/mini2.jpg"><img src="res/mini2.jpg" alt="2" /></a>
         </div>
         <div class="column col3">
-          <img src="res/mini3.jpg" alt="1"/>
-          <img src="res/mini4.jpg" alt="2"/>
+          <a href="res/mini3.jpg"><img src="res/mini3.jpg" alt="1" /></a>
+          <a href="res/mini4.jpg"><img src="res/mini4.jpg" alt="2" /></a>
         </div>
         <div class="column col4">
-          <img src="res/mini1.jpg" alt="1"/>
-          <img src="res/mini2.jpg" alt="2"/>
+          <a href="res/mini1.jpg"><img src="res/mini1.jpg" alt="1" /></a>
+          <a href="res/mini2.jpg"><img src="res/mini2.jpg" alt="2" /></a>
         </div>
       </div>
     </div>
@@ -153,12 +174,11 @@
             <div class="avis-title">OSKOUR JSUIS BLOKER</div>
           </div>
         </div>
-        <p class="avis">La difficulté est au rendez-vous! Nous avons déjà fait deux escapes dans cette enseigne, 
-            2 fois la même, et on arrive jamais à la terminer! 
-            Je sais que mon psychologue m'a dit que j'avais 
-            le QI d'une huitre, mais là, je vois pas du tout comment 
-            résoudre le problème... surtout que je ne suis pas seul! 
-            On est quand même 6 dans la salle... Peut-être qu'il faudrait que j'y retourne une troisième fois pour réessayer ?</p>
+        <p class="avis">La difficulté est au rendez-vous! Nous avons déjà fait deux escapes dans cette enseigne,
+          2 fois la même, et on arrive jamais à la terminer!
+          Je sais que mon psychologue m'a dit que j'avais
+          le QI d'une huitre, mais là, je vois pas du tout comment
+          résoudre le problème...</p>
       </div>
       <div class="card card2">
         <div class="info">
@@ -174,12 +194,10 @@
             <div class="avis-title">J'ai rien compris ?</div>
           </div>
         </div>
-        <p class="avis">Que de mauvaises surprise dans ce dirigeable! 
-            Je m'attendais à un voyage pépère puis d'un seul coup, 
-            BAM!!! Sans prévenir une canalisation qui pète!? Heureusement qu'il y avait des parachutes! 
-            Mais bien évidement, ça aurait été trop facile que les portes restent ouvertes bien sûr... 
-            Plus jamais je remets les pieds dans ce Lynouxyboubountou! 
-            Ceux qui veulent essayer de sortir de ce merdier, vous allez adorer mais moi, c'est pas mon truc.</p>
+        <p class="avis">Que de mauvaises surprise dans ce dirigeable!
+          Je m'attendais à un voyage pépère puis d'un seul coup,
+          BAM!!! Sans prévenir une canalisation qui pète!? Heureusement qu'il y avait des parachutes!
+          Plus jamais je remets les pieds dans ce Lynouxyboubountou!</p>
       </div>
       <div class="card card3">
         <div class="info">
@@ -195,11 +213,11 @@
             <div class="avis-title">J'ai trouvé la technique</div>
           </div>
         </div>
-        <p class="avis">Je le savais depuis le début! 
-            C'était sûr que ça tiendrait pas! 
-            Un bateau volant en caoutchouc!? Et puis quoi encore? 
-            Heureusement que j'avais prévu mon parachute de secours, 
-            ducoup... jme suis baré sans les autres AHAH!!</p>
+        <p class="avis">Je le savais depuis le début!
+          C'était sûr que ça tiendrait pas!
+          Un bateau volant en caoutchouc!? Et puis quoi encore?
+          Heureusement que j'avais prévu mon parachute de secours,
+          ducoup... jme suis baré sans les autres AHAH!!</p>
       </div>
       <div class="card card4">
         <div class="info">
@@ -217,15 +235,15 @@
             <div class="avis-title">Y a beaucoup de fumée non ?</div>
           </div>
         </div>
-        <p class="avis">Mamamia le truc de fou! Dès qu'on est rentré dans la salle de "repos" 
-            de ce Linouxy-ché-pas-quoi, et qu'on s'est assis, 
-            ya de la fumée qui est sortit de la chaudière et Michel 
-            s'est chié dessus! Des barres de rire MDR! 
-            Vraiment, je recommande énormément cet escape game...sans Michel et l'odeur qui va avec par contre...</p>
+        <p class="avis">Mamamia le truc de fou! Dès qu'on est rentré dans la salle de "repos"
+          de ce Linouxy-ché-pas-quoi, et qu'on s'est assis,
+          ya de la fumée qui est sortit de la chaudière et Michel
+          s'est chié dessus! Des barres de rire MDR!
+          Vraiment, je recommande énormément cet escape game...</p>
       </div>
     </div>
   </div>
-  
+
   <footer>
     <nav>
       <div><a href="index.html#topbar">Début</a>

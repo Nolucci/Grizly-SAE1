@@ -4,17 +4,36 @@ body {
 }
 
 /*Mini responsive*/
-@media screen and (max-width: 1000px) {
-  .card2 {
+@media screen and (max-width: 1100px) {
+  .card2,
+  .col1,
+  img[alt="illu1-3"] {
     display: none !important;
   }
-  .col1 {
-    display: none !important;
+  .synopsis,
+  #second article,
+  #third {
+    width: 85% !important;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .card3 {
+  .showMore,
+  .card3,
+  img[alt="illu1-2"] {
+    display: none !important;
+  }
+  .synopsis,
+  #second article,
+  #third {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  img[alt="illu1-2"],
+  .col4,
+  .art-img:not(.three-imgs-container){
     display: none !important;
   }
 }
@@ -43,6 +62,7 @@ body {
   justify-content: flex-end;
   margin-right: 10px;
 }
+
 .menu {
   color: white;
   text-decoration: none;
@@ -51,22 +71,28 @@ body {
   padding: 2px 5px;
   border-radius: 5px;
 }
+
 .right a {
   color: white;
   text-decoration: none;
 }
+
 .right a:hover {
   color: var(--main-color) !important;
 }
-.have-sub{
+
+.have-sub {
   position: relative;
 }
-.have-sub:hover{
+
+.have-sub:hover {
   border-radius: 5px 5px 0 0;
 }
+
 .have-sub:hover .submenu {
   display: block;
 }
+
 .submenu {
   left: 0;
   background-color: #272626;
@@ -76,10 +102,12 @@ body {
   width: 47px;
   border-radius: 0 0 5px 5px;
 }
-.submenu div{
+
+.submenu div {
   padding-bottom: 4px;
 }
-.submenu div a{
+
+.submenu div a {
   font-size: 90%;
 }
 
@@ -97,10 +125,16 @@ body {
   margin-bottom: 20px;
 }
 
-@keyframes title{
-  from {transform: scale(-0.5,-0.5)}
-  to {transform: scale(1,1)}
+@keyframes title {
+  from {
+    transform: scale(-0.5, -0.5)
+  }
+
+  to {
+    transform: scale(1, 1)
+  }
 }
+
 .title {
   position: relative;
   width: fit-content;
@@ -114,64 +148,68 @@ body {
   animation-name: title;
 }
 
-/*synopsis*/
+/*Synopsis*/
 .synopsis {
-  margin: 0 15px;
-}
-
-/*article*/
-img[alt="illu1"] {
-  height: 100px;
+  width: 70%;
+  margin: auto;
 }
 
 /*Votre aventure en image*/
-.gallery-container{
-  padding: 30px 0;
+.gallery-container {
+  padding: 15px 0;
   text-align: center;
 }
-.gallery-container h2{
+
+.gallery-container h2 {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .columns {
   display: flex;
   justify-content: center;
 }
+
 .column {
   display: flex;
   width: fit-content;
   flex-direction: column;
 }
-.col1{
+
+.col1 {
   width: 551px;
   margin-right: 30px;
 }
+
 .column img {
   height: 150px;
   width: 200px;
   margin: 5px;
   object-fit: cover;
   border-radius: 5px;
-  transition: transform .2s; 
+  transition: transform .2s;
   cursor: pointer;
 }
-.gallery-container .column img:hover{
+
+.gallery-container .column img:hover {
   transform: scale(1.05);
 }
+
 img[alt="1"] {
   margin-top: 0;
 }
+
 img[alt="2"] {
   margin-bottom: 0;
 }
-iframe{
-  height : 100%;
+
+iframe {
+  height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
 /*avis*/
-
 .customerRating {
   background-color: #ddd8d0;
   padding: 20px 0;
@@ -243,7 +281,6 @@ iframe{
 }
 
 /*footer*/
-
 footer {
   padding-top: 20px;
   margin: auto;
@@ -252,82 +289,80 @@ footer {
 }
 
 
-/*CSS resets*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-article, aside,
-figure, figcaption, header, hgroup, 
-menu, nav, output{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-
-
 /* Les 3 rooms (courage albin) */
 @font-face {
-  font-family:'pourtexte';
-  src:url('./OldNewspaperTypes.ttf') /* pour le texte */
+  font-family: 'pourtexte';
+  src: url('./OldNewspaperTypes.ttf')
+    /* pour le texte */
 }
+
 @font-face {
-  font-family : 'pourtitre';
-  src:url('./Steampunk.otf')
+  font-family: 'pourtitre';
+  src: url('./Steampunk.otf')
 }
 
 #second p {
-  font-family : 'pourtexte';
-  font-size : 20px;
+  font-family: 'pourtexte';
+  font-size: 20px;
 }
 
 #second h2 {
-  font-family : 'pourtitre';
+  font-family: 'pourtitre';
   font-size: 40px;
 }
 
 /* Article playground (jfais les boutons, pas toucher) */
 
-
-article {
-  margin: 30px 100px;
+#second article {
+  margin: 25px auto;
   background-color: #4287f5;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 70%;
+}
 
+#salle1 {
+  flex-direction: column;
+}
+
+article h2 {
+  margin: 10px 0;
 }
 
 article button {
-  margin-top: 40px;
+  margin-top: 10px;
   width: 200px;
-  margin: auto;
+  align-self: center;
   opacity: 0.7;
 }
 
-.cText {
-  flex: 2;
-  margin : 10px 50px;
+.art-text {
+  margin: 10px 3%;
+  display: flex;
+  flex-direction: column;
 }
 
-.cImg * {
-  flex: 1;
-  width: 100%;
+.art-img img {
+  height: auto;
+  width: 220px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.art-img:not(.three-imgs-container) {
+  align-self: center;
+}
+
+.three-imgs-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8px;
 }
 
 button {
-  background-color: #2a302a; 
+  background-color: #2a302a;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -340,45 +375,12 @@ button {
   border-radius: 10px;
 }
 
-#tripleimg {
-  padding: 10px;
-  margin: 30px 100px;
-  background-color: #4287f5;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-#tripleimg h2 {
-  margin: 10px 0;
-}
-
-.ctnThree{
-  margin-top: 30px;;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-.ctnThree img {
-  border-radius: 10px;
-  width: 250px;
-  height: auto;
-
-}
-
-/* p {
-  text-align: justify;
-  text-justify: inter-word;
-} */
-
-
 /* THIRD PART */
 
 #third {
   text-align: center;
   margin: auto;
-  width: 75%;
+  width: 70%;
   padding: 10px 0px;
 }
 
@@ -386,10 +388,37 @@ button {
   margin-bottom: 20px;
   text-align: center;
 }
+
 #third p {
-  margin:0 20px;
+  margin: 0 20px;
 }
 
 #third hr {
   margin: 20px 0;
+}
+
+
+/*CSS resets*/
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,figure,figcaption,
+header,hgroup,menu,nav,output {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
 }

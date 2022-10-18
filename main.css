@@ -119,7 +119,7 @@ body {
 }
 
 #home {
-  background: url(res/placeholder-main.jpg) center/cover no-repeat;
+  background: url(res/bg.jpg) center/cover no-repeat;
   height: calc(100vh - 50px);
   color: white;
   margin-bottom: 20px;
@@ -421,4 +421,4 @@ body {
 ol,
 ul {
   list-style: none;
-}
+} 

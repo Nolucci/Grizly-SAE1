@@ -3,6 +3,7 @@ body {
   --main-color: #EECA65;
 }
 
+
 /*Mini responsive*/
 @media screen and (max-width: 1100px) {
   .card2,
@@ -37,6 +38,10 @@ body {
     display: none !important;
   }
 }
+/*jsp où le mettre*/
+html {
+  scroll-behavior: smooth;
+}
 
 /*La topbar*/
 #topbar {
@@ -54,6 +59,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   padding: 0 10px;
+  font-size: 130%;
 }
 
 .right {
@@ -75,9 +81,10 @@ body {
 .right a {
   color: white;
   text-decoration: none;
+  font-size: 145%;
 }
 
-.right a:hover {
+.right a:hover:not(.have-sub>a) {
   color: var(--main-color) !important;
 }
 
@@ -88,27 +95,45 @@ body {
 .have-sub:hover {
   border-radius: 5px 5px 0 0;
 }
-
+@keyframes subanim {
+  from {
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+  to {
+    transform: scale(1, 1);
+    transform-origin: top;
+  }
+}
 .have-sub:hover .submenu {
   display: block;
+  animation: subanim 400ms;
 }
-
+.have-sub > a {
+ pointer-events:none;
+}
 .submenu {
+  top: 100%;
   left: 0;
   background-color: #272626;
   display: none;
   position: absolute;
-  padding: 7px 5px;
-  width: 47px;
+  padding: 1px 5px 8px 5px;
+  width: calc(100% - 10px);
   border-radius: 0 0 5px 5px;
 }
 
 .submenu div {
-  padding-bottom: 4px;
+  padding-top: 5px;
+  height: fit-content;
+  width: 100%;
 }
 
 .submenu div a {
-  font-size: 90%;
+  display: inline-block;
+  font-size: 120%;
+  width: inherit;
+  text-align: center;
 }
 
 /*accueil*/
@@ -119,6 +144,7 @@ body {
 }
 
 #home {
+  scroll-margin-top: 50px;
   background: url(res/bg.jpg) center/cover no-repeat;
   height: calc(100vh - 50px);
   margin-bottom: 20px;
@@ -128,7 +154,6 @@ body {
   from {
     transform: scale(-0.5, -0.5)
   }
-
   to {
     transform: scale(1, 1)
   }
@@ -141,7 +166,7 @@ body {
   margin: auto;
   font-size: calc((4vw + 4vh) / 2);
   padding: 5px 10px 10px 10px;
-  background-color: var(--main-color);
+  background-color: #eec965b2;
   transition: 200ms font-size;
   animation-duration: 700ms;
   animation-name: title;
@@ -316,24 +341,27 @@ footer {
 /* Article playground (jfais les boutons, pas toucher) */
 
 #second article {
+  scroll-margin-top: 70px;
   margin: 25px auto;
   background-color: #ddd8d0;
   display: flex;
   justify-content: center;
-  /*border: solid 3px var(--main-color); #e0e0cb*/
   border-radius: 5px;
   width: 70%;
+  padding: 15px;
 }
 
 #salle1 {
   flex-direction: column;
 }
 
-article h2 {
+#second article h2 {
   margin: 10px 0;
 }
-
-article button {
+#second article > div:first-child {
+  margin-right: 15px;
+}
+#second article button {
   margin-top: 10px;
   width: 200px;
   align-self: center;
@@ -341,27 +369,27 @@ article button {
 }
 
 .art-text {
-  margin: 10px 3%;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
 
+
 .art-img img {
-  height: auto;
+  height: 100%;
   width: 220px;
-  margin: 5px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.art-img:not(.three-imgs-container) {
-  align-self: center;
-}
 
 .three-imgs-container {
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 8px;
+  justify-content:center;
+  padding-top: 16px;
+}
+.three-imgs-container img:not(.three-imgs-container img:last-child) {
+  margin-right: 40px;
 }
 
 button {
@@ -399,7 +427,6 @@ button {
 #third hr {
   margin: 20px 0;
 }
-
 
 /*CSS resets*/
 html,body,div,span,applet,object,iframe,

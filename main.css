@@ -461,3 +461,53 @@ ol,
 ul {
   list-style: none;
 } 
+
+
+/* Scroll down arrow (CHEVRON) */
+
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+    opacity: 0%;
+  }
+  50% {
+    margin-top: 20px;
+    opacity: 100%;
+
+  }
+
+  100% {
+    margin-top: 40px;
+    opacity: 0%;
+
+  }
+}
+
+.down-arrow {
+  text-align: center;
+  margin-top: 75vh;
+
+}
+.down-arrow::before {
+	border-style: solid;
+	border-width: 0.35em 0.35em 0 0;
+	content: '';
+	display: inline-block;
+	height: 1.5em;
+	left: 0.45em;
+	top: 0.45em;
+	transform: rotate(-45deg);
+	width: 1.5em;
+  color: white;
+  animation: jumpInfinite 1.5s infinite;
+
+}
+
+.down-arrow.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+
+

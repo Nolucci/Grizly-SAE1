@@ -55,7 +55,7 @@ html {
 }
 
 .home {
-  color: white;
+  color: rgb(150, 100, 5);
   text-decoration: none;
   font-size: 20px;
   padding: 0 10px;
@@ -70,7 +70,7 @@ html {
 }
 
 .menu {
-  color: white;
+  color: rgb(150, 100, 5);
   text-decoration: none;
   margin-left: 7px;
   background-color: rgba(255, 255, 255, 0.06);
@@ -138,7 +138,7 @@ html {
 
 /*accueil*/
 body {
-  background: #d8d2c0 ;
+  background: rgb(100, 70, 20, 0.9) ;
   font-family: Verdana, sans-serif;
   font-size: 100%;
 }
@@ -166,7 +166,7 @@ body {
   margin: auto;
   font-size: calc((4vw + 4vh) / 2);
   padding: 5px 10px 10px 10px;
-  background-color: #eec965b2;
+  background-color: rgb(150, 120, 20, 0.9);
   transition: 200ms font-size;
   animation-duration: 700ms;
   animation-name: title;
@@ -235,7 +235,7 @@ iframe {
 
 /*avis*/
 .customerRating {
-  background-color: #ddd8d0;
+  background-color: rgb(115, 90, 40, 0.9);
   padding: 20px 0;
 }
 
@@ -258,9 +258,9 @@ iframe {
   margin: 5px 1%;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgb(160, 130, 70, 0.9);
   flex: auto;
-  border: solid 2px var(--main-color);
+  border: solid 2px rgb(160, 130, 70, 0.9);
 }
 
 .info {
@@ -311,8 +311,8 @@ footer {
   margin: auto;
   height: 60px;
   text-align: center;
-  background-color: #1a1818;
-  color: white;
+  background-color: rgb(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -343,7 +343,7 @@ footer {
 #second article {
   scroll-margin-top: 70px;
   margin: 25px auto;
-  background-color: #ddd8d0;
+  background-color: rgb(160, 130, 70, 0.9);
   display: flex;
   justify-content: center;
   border-radius: 5px;

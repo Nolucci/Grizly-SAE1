@@ -351,6 +351,10 @@ footer {
   padding: 15px;
 }
 
+#second article:not(#salle1){
+  gap: 50px;
+}
+
 #salle1 {
   flex-direction: column;
 }
@@ -376,8 +380,8 @@ footer {
 
 
 .art-img img {
-  height: 100%;
-  width: 220px;
+  height: 350px;
+  width: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -390,6 +394,11 @@ footer {
 }
 .three-imgs-container img:not(.three-imgs-container img:last-child) {
   margin-right: 40px;
+}
+
+.three-imgs-container img {
+  height: 250px;
+  width: fit-content;
 }
 
 button {

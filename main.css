@@ -165,7 +165,7 @@ body {
   top: 45%;
   margin: auto;
   font-size: calc((4vw + 4vh) / 2);
-  padding: 5px 10px 10px 10px;
+  padding: 15px 25px 15px 25px;
   background-color: rgb(150, 120, 20, 0.9);
   transition: 200ms font-size;
   animation-duration: 700ms;
@@ -325,7 +325,7 @@ footer {
 
 @font-face {
   font-family: 'pourtitre';
-  src: url('res/SteampunkMachineryFont-Regular.ttf')
+  src: url('res/font/stpf.ttf')
 }
 
 #second p {
@@ -335,14 +335,13 @@ footer {
 
 #second h2 {
   font-family: 'pourtitre', sans-serif;
-  font-size:40px;
+  font-size:26px;
 }
 
  /* ne m'en veux pas s'il te plait eliott j'ai essayé de le mettre au bon endroit*/
-#home div{
+#home .title{
   font-family:'pourtitre', sans-serif;
   font-size:50px;
-  font-weight: 900;
 }
 
 /* Article playground (jfais les boutons, pas toucher) */

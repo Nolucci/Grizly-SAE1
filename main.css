@@ -319,7 +319,7 @@ footer {
 /* Les 3 rooms (courage albin) */
 @font-face {
   font-family: 'pourtexte';
-  src: url('res/OldNewspaperTypes.ttf')
+  src: url('res/Steampunk.otf')
     /* pour le texte */
 }
 
@@ -330,12 +330,19 @@ footer {
 
 #second p {
   font-family: 'pourtexte', sans-serif;
-  font-size: 20px;
+  font-size:20px;
 }
 
 #second h2 {
-  font-family: 'pourtitre';
-  font-size: 40px;
+  font-family: 'pourtitre', sans-serif;
+  font-size:40px;
+}
+
+ /* ne m'en veux pas s'il te plait eliott j'ai essayé de le mettre au bon endroit*/
+#home div{
+  font-family:'pourtitre', sans-serif;
+  font-size:50px;
+  font-weight: 900;
 }
 
 /* Article playground (jfais les boutons, pas toucher) */

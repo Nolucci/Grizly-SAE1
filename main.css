@@ -1,6 +1,7 @@
 /*Variables*/
 body {
-  --main-color: #EECA65;
+  /*c'est du rgb*/
+  --main-color:240, 200, 100;
 }
 
 
@@ -55,7 +56,7 @@ html {
 }
 
 .home {
-  color: rgb(150, 100, 5);
+  color: rgb(var(--main-color));
   text-decoration: none;
   font-size: 20px;
   padding: 0 10px;
@@ -70,10 +71,9 @@ html {
 }
 
 .menu {
-  color: rgb(150, 100, 5);
   text-decoration: none;
   margin-left: 7px;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: #272626;
   padding: 2px 5px;
   border-radius: 5px;
 }
@@ -85,7 +85,7 @@ html {
 }
 
 .right a:hover:not(.have-sub>a) {
-  color: var(--main-color) !important;
+  color: rgb(var(--main-color)) !important;
 }
 
 .have-sub {
@@ -138,7 +138,7 @@ html {
 
 /*accueil*/
 body {
-  background: rgb(100, 70, 20, 0.9) ;
+  background-color: rgba(var(--main-color), 0.50);
   font-family: Verdana, sans-serif;
   font-size: 100%;
 }
@@ -164,12 +164,14 @@ body {
   width: fit-content;
   top: 45%;
   margin: auto;
-  font-size: calc((4vw + 4vh) / 2);
-  padding: 15px 25px 15px 25px;
-  background-color: rgb(150, 120, 20, 0.9);
+  font-size: calc((4vw + 4vh) / 2 - 5px);
+  font-family:'pourtitre', sans-serif;
+  padding: 24px 10px;
+  background-color: #eec965b2;;
   transition: 200ms font-size;
   animation-duration: 700ms;
   animation-name: title;
+  
 }
 
 /*Synopsis*/
@@ -235,7 +237,7 @@ iframe {
 
 /*avis*/
 .customerRating {
-  background-color: rgb(115, 90, 40, 0.9);
+  background-color: rgba(var(--main-color), 0.20);
   padding: 20px 0;
 }
 
@@ -258,9 +260,9 @@ iframe {
   margin: 5px 1%;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(160, 130, 70, 0.9);
+  background-color: rgba(var(--main-color), 0.30);
   flex: auto;
-  border: solid 2px rgb(160, 130, 70, 0.9);
+  border: solid 2px rgba(var(--main-color), 0.50);
 }
 
 .info {
@@ -291,7 +293,7 @@ iframe {
 }
 
 .star.checked {
-  color: orange !important;
+  color: rgb(255, 136, 0) !important;
 }
 
 .avis-title {
@@ -308,11 +310,11 @@ iframe {
 /*footer*/
 footer {
   padding-top: 20px;
-  margin: auto;
+  margin: 30px auto 0 auto;
   height: 60px;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.2);
-  color: rgb(0, 0, 0);
+  background-color: #1a1818;
+  color: white;
 }
 
 
@@ -338,18 +340,18 @@ footer {
   font-size:26px;
 }
 
- /* ne m'en veux pas s'il te plait eliott j'ai essayé de le mettre au bon endroit*/
-#home .title{
-  font-family:'pourtitre', sans-serif;
-  font-size:50px;
+/* Synopsis */
+#first {
+  scroll-margin-top: 70px;
 }
 
 /* Article playground (jfais les boutons, pas toucher) */
-
+   
 #second article {
   scroll-margin-top: 70px;
   margin: 25px auto;
-  background-color: rgb(160, 130, 70, 0.9);
+  background-color:  rgba(var(--main-color), 0.3);
+  border: rgba(0, 0, 0, 0.439) 3px solid;
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -477,23 +479,19 @@ ul {
     margin-top: 0;
     opacity: 0%;
   }
-  50% {
+  60% {
     margin-top: 20px;
     opacity: 100%;
-
   }
-
   100% {
     margin-top: 40px;
     opacity: 0%;
-
   }
 }
 
 .down-arrow {
   text-align: center;
   margin-top: 75vh;
-
 }
 .down-arrow::before {
 	border-style: solid;
@@ -501,17 +499,15 @@ ul {
 	content: '';
 	display: inline-block;
 	height: 1.5em;
-	left: 0.45em;
-	top: 0.45em;
+	left: 0;
+	top: 0;
 	transform: rotate(-45deg);
 	width: 1.5em;
   color: white;
   animation: jumpInfinite 1.5s infinite;
-
 }
 
 .down-arrow.bottom:before {
-	top: 0;
 	transform: rotate(135deg);
 }
 

@@ -325,11 +325,11 @@ footer {
 
 @font-face {
   font-family: 'pourtitre';
-  src: url('./Steampunk.otf')
+  src: url('./SteampunkMachineryFont-Regular.ttf')
 }
 
 #second p {
-  font-family: 'pourtexte';
+  font-family: 'pourtexte', sans-serif;
   font-size: 20px;
 }
 

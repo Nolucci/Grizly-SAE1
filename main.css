@@ -319,13 +319,13 @@ footer {
 /* Les 3 rooms (courage albin) */
 @font-face {
   font-family: 'pourtexte';
-  src: url('./OldNewspaperTypes.ttf')
+  src: url('res/OldNewspaperTypes.ttf')
     /* pour le texte */
 }
 
 @font-face {
   font-family: 'pourtitre';
-  src: url('./SteampunkMachineryFont-Regular.ttf')
+  src: url('res/SteampunkMachineryFont-Regular.ttf')
 }
 
 #second p {

@@ -12,10 +12,15 @@ body {
   img[alt="illu1-3"] {
     display: none !important;
   }
+  img[alt="illu1-2"] {
+    margin-right: 0 !important;
+  }
   .synopsis,
-  #second article,
   #third {
     width: 85% !important;
+  }
+  #second article{
+    width: calc(85% - 6px) !important;
   }
 }
 
@@ -25,10 +30,15 @@ body {
   img[alt="illu1-2"] {
     display: none !important;
   }
+  img[alt="illu1-1"] {
+    margin-right: 0 !important;
+  }
   .synopsis,
-  #second article,
   #third {
     width: 95% !important;
+  }
+  #second article{
+    width: calc(95% - 6px) !important;
   }
 }
 
@@ -184,6 +194,7 @@ body {
 .gallery-container {
   padding: 15px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .gallery-container h2 {
@@ -261,7 +272,7 @@ iframe {
   padding: 10px;
   border-radius: 5px;
   background-color: rgba(var(--main-color), 0.30);
-  flex: auto;
+  flex: 1 1;
   border: solid 2px rgba(var(--main-color), 0.50);
 }
 
@@ -369,13 +380,10 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 5px;
-  width: 70%;
+  width: calc(70% - 6px);
   padding: 15px;
 }
 
-#second article:not(#salle1){
-  gap: 50px;
-}
 
 #salle1 {
   flex-direction: column;
@@ -402,12 +410,11 @@ footer {
 
 
 .art-img img {
-  height: 350px;
-  width: 400px;
+  height: 100%;
+  width: min(35vw, 390px);
   object-fit: cover;
   border-radius: 5px;
 }
-
 
 .three-imgs-container {
   display: flex;
@@ -417,10 +424,10 @@ footer {
 .three-imgs-container img:not(.three-imgs-container img:last-child) {
   margin-right: 40px;
 }
-
 .three-imgs-container img {
-  height: 250px;
+  height: 200px;
   width: fit-content;
+  flex: 1 1;
 }
 
 button {

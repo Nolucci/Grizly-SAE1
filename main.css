@@ -1,60 +1,49 @@
-/*Variables*/
+/*SOMMAIRE
+
+> Variables
+> Général
+> Topbar
+> Accueil
+> Synopsis
+> Votre aventure en image
+> Les 3 rooms
+> RDV
+> Avis
+> Footer
+> Fonts
+> Mini responsive
+> CSS resets
+
+*/
+
+/* Variables */
 body {
   /*c'est du rgb*/
-  --main-color:240, 200, 100;
+  --main-color: 240, 200, 100;
 }
 
-
-/*Mini responsive*/
-@media screen and (max-width: 1100px) {
-  .card2,
-  .col1,
-  img[alt="illu1-3"] {
-    display: none !important;
-  }
-  img[alt="illu1-2"] {
-    margin-right: 0 !important;
-  }
-  .synopsis,
-  #third {
-    width: 85% !important;
-  }
-  #second article{
-    width: calc(85% - 6px) !important;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .showMore,
-  .card3,
-  img[alt="illu1-2"] {
-    display: none !important;
-  }
-  img[alt="illu1-1"] {
-    margin-right: 0 !important;
-  }
-  .synopsis,
-  #third {
-    width: 95% !important;
-  }
-  #second article{
-    width: calc(95% - 6px) !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  img[alt="illu1-2"],
-  .col4,
-  .art-img:not(.three-imgs-container){
-    display: none !important;
-  }
-}
-/*jsp où le mettre*/
+/* Général */
 html {
   scroll-behavior: smooth;
 }
+p {
+  font-family: "pourtexte", sans-serif;
+}
+button {
+  background-color: #2a302a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
-/*La topbar*/
+/* Topbar */
 #topbar {
   display: flex;
   align-items: center;
@@ -94,7 +83,7 @@ html {
   font-size: 145%;
 }
 
-.right a:hover:not(.have-sub>a) {
+.right a:hover:not(.have-sub > a) {
   color: rgb(var(--main-color)) !important;
 }
 
@@ -120,7 +109,7 @@ html {
   animation: subanim 400ms;
 }
 .have-sub > a {
- pointer-events:none;
+  pointer-events: none;
 }
 .submenu {
   top: 100%;
@@ -146,9 +135,9 @@ html {
   text-align: center;
 }
 
-/*accueil*/
+/* Accueil */
 body {
-  background-color: rgba(var(--main-color), 0.50);
+  background-color: rgba(var(--main-color), 0.5);
   font-family: Verdana, sans-serif;
   font-size: 100%;
 }
@@ -157,15 +146,15 @@ body {
   scroll-margin-top: 50px;
   background: url(res/bg.jpg) center/cover no-repeat;
   height: calc(100vh - 50px);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @keyframes title {
   from {
-    transform: scale(-0.5, -0.5)
+    transform: scale(-0.5, -0.5);
   }
   to {
-    transform: scale(1, 1)
+    transform: scale(1, 1);
   }
 }
 
@@ -175,22 +164,60 @@ body {
   top: 45%;
   margin: auto;
   font-size: calc((4vw + 4vh) / 2 - 5px);
-  font-family:'pourtitre', sans-serif;
+  font-family: "pourtitre", sans-serif;
   padding: 24px 10px;
-  background-color: #eec965b2;;
+  background-color: #eec965b2;
   transition: 200ms font-size;
   animation-duration: 700ms;
   animation-name: title;
-  
+}
+/*chevron sur l'image*/
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+    opacity: 0%;
+  }
+  60% {
+    margin-top: 20px;
+    opacity: 100%;
+  }
+  100% {
+    margin-top: 40px;
+    opacity: 0%;
+  }
 }
 
-/*Synopsis*/
+.down-arrow {
+  text-align: center;
+  margin-top: 75vh;
+}
+.down-arrow::before {
+  border-style: solid;
+  border-width: 0.35em 0.35em 0 0;
+  content: "";
+  display: inline-block;
+  height: 1.5em;
+  left: 0;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 1.5em;
+  color: white;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow.bottom:before {
+  transform: rotate(135deg);
+}
+
+/* Synopsis */
 .synopsis {
   width: 70%;
   margin: auto;
+  padding-bottom: 20px;
+  scroll-margin-top: 70px;
 }
 
-/*Votre aventure en image*/
+/* Votre aventure en image */
 .gallery-container {
   padding: 15px 0;
   text-align: center;
@@ -214,7 +241,7 @@ body {
 }
 
 .col1 {
-  width: 551px;
+  width: 550px;
   margin-right: 30px;
 }
 
@@ -224,7 +251,7 @@ body {
   margin: 5px;
   object-fit: cover;
   border-radius: 5px;
-  transition: transform .2s;
+  transition: transform 0.2s;
   cursor: pointer;
 }
 
@@ -246,9 +273,104 @@ iframe {
   border-radius: 5px;
 }
 
-/*avis*/
+/* Les 3 rooms */
+#second {
+  scroll-margin-top: 70px;
+}
+#second article {
+  scroll-margin-top: 70px;
+  margin: 25px auto;
+  background-color: rgba(var(--main-color), 0.3);
+  border: rgba(0, 0, 0, 0.439) 3px solid;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: calc(70% - 6px);
+  padding: 15px;
+}
+#second article h2 {
+  margin: 10px 0;
+  font-family: "pourtitre", sans-serif;
+  font-size: 26px;
+}
+
+#second article h4 {
+  margin: 10px 0;
+  font-family: "pourtitre", sans-serif;
+  font-size: 16px;
+}
+#second p {
+  font-size: 20px;
+  margin: 30px 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+article#salle1 {
+  flex-direction: column;
+}
+#second article > div:first-child:not(#salle1 div) {
+  margin-right: 15px;
+}
+
+.art-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-img img {
+  height: 100%;
+  width: min(35vw, 390px);
+  object-fit: cover;
+  border-radius: 5px;
+}
+.three-imgs-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.three-imgs-container img:not(.three-imgs-container img:last-child) {
+  margin-right: 40px;
+}
+.three-imgs-container img {
+  height: 200px;
+  width: fit-content;
+  flex: 1 1;
+}
+
+#second article button {
+  margin-top: 10px;
+  width: 200px;
+  align-self: center;
+  opacity: 0.7;
+}
+
+/* RDV */
+#third {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  padding: 10px 0px;
+  scroll-margin-top: 70px;
+}
+
+#third h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#third p {
+  margin: 0 20px;
+}
+
+#third hr {
+  margin: 20px 0;
+}
+
+/* Avis */
 .customerRating {
-  background-color: rgba(var(--main-color), 0.20);
+  background-color: rgba(var(--main-color), 0.2);
   padding: 20px 0;
 }
 
@@ -271,9 +393,9 @@ iframe {
   margin: 5px 1%;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgba(var(--main-color), 0.30);
+  background-color: rgba(var(--main-color), 0.3);
   flex: 1 1;
-  border: solid 2px rgba(var(--main-color), 0.50);
+  border: solid 2px rgba(var(--main-color), 0.5);
 }
 
 .info {
@@ -287,8 +409,8 @@ iframe {
   object-fit: cover;
 }
 
-.info>div {
-  margin: auto 0 auto 10px
+.info > div {
+  margin: auto 0 auto 10px;
 }
 
 .star-container {
@@ -318,7 +440,7 @@ iframe {
   padding-top: 10px;
 }
 
-/*footer*/
+/* Footer */
 footer {
   padding-top: 20px;
   margin: 30px auto 0 auto;
@@ -327,146 +449,66 @@ footer {
   background-color: #1a1818;
   color: white;
 }
+footer p {
+  padding-top: 10px;
+}
 
-
-/* Les 3 rooms (courage albin) */
+/* Fonts */
 @font-face {
-  font-family: 'pourtexte';
-  src: url('res/Steampunk.otf')
-    /* pour le texte */
+  font-family: "pourtitre";
+  src: url("res/font/stpf.ttf");
 }
-
 @font-face {
-  font-family: 'pourtitre';
-  src: url('res/font/stpf.ttf')
+  font-family: "pourtexte";
+  src: url("res/Steampunk.otf");
 }
 
-#second p {
-  font-family: 'pourtexte', sans-serif;
-  font-size:20px;
+/* Mini responsive */
+@media screen and (max-width: 1100px) {
+  .card2,
+  .col1,
+  img[alt="illu1-3"] {
+    display: none !important;
+  }
+  img[alt="illu1-2"] {
+    margin-right: 0 !important;
+  }
+  .synopsis,
+  #third {
+    width: 85% !important;
+  }
+  #second article {
+    width: calc(85% - 6px) !important;
+  }
 }
 
-#second h2 {
-  margin: 10px 0;
-  font-family: 'pourtitre', sans-serif;
-  font-size:26px;
+@media screen and (max-width: 700px) {
+  .showMore,
+  .card3,
+  img[alt="illu1-2"] {
+    display: none !important;
+  }
+  img[alt="illu1-1"] {
+    margin-right: 0 !important;
+  }
+  .synopsis,
+  #third {
+    width: 95% !important;
+  }
+  #second article {
+    width: calc(95% - 6px) !important;
+  }
 }
 
-#second p {
-  margin: 30px 0;
-  text-align: justify;
-  text-justify: inter-word;
+@media screen and (max-width: 500px) {
+  img[alt="illu1-2"],
+  .col4,
+  .art-img:not(.three-imgs-container) {
+    display: none !important;
+  }
 }
 
-#second h4 {
-  margin: 10px 0;
-  font-family: 'pourtitre', sans-serif;
-  font-size:16px;
-}
-
-/* Synopsis */
-#first {
-  padding: 30px 0;
-  scroll-margin-top: 70px;
-}
-
-/* Article playground (jfais les boutons, pas toucher) */
-   
-#second article {
-  scroll-margin-top: 70px;
-  margin: 25px auto;
-  background-color:  rgba(var(--main-color), 0.3);
-  border: rgba(0, 0, 0, 0.439) 3px solid;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  width: calc(70% - 6px);
-  padding: 15px;
-}
-
-
-#salle1 {
-  flex-direction: column;
-}
-
-#second article h2 {
-  margin: 10px 0;
-}
-#second article > div:first-child {
-  margin-right: 15px;
-}
-#second article button {
-  margin-top: 10px;
-  width: 200px;
-  align-self: center;
-  opacity: 0.7;
-}
-
-.art-text {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.art-img img {
-  height: 100%;
-  width: min(35vw, 390px);
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.three-imgs-container {
-  display: flex;
-  justify-content:center;
-  padding-top: 16px;
-}
-.three-imgs-container img:not(.three-imgs-container img:last-child) {
-  margin-right: 40px;
-}
-.three-imgs-container img {
-  height: 200px;
-  width: fit-content;
-  flex: 1 1;
-}
-
-button {
-  background-color: #2a302a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-/* THIRD PART */
-
-#third {
-  text-align: center;
-  margin: auto;
-  width: 70%;
-  padding: 10px 0px;
-}
-
-#third h3 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#third p {
-  margin: 0 20px;
-}
-
-#third hr {
-  margin: 20px 0;
-}
-
-/*CSS resets*/
+/* CSS resets */
 html,body,div,span,applet,object,iframe,
 h1,h2,h3,h4,h5,h6,
 p,blockquote,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,figure,figcaption,
@@ -494,47 +536,3 @@ ul {
 footer a {
   color:white
 }
-
-
-/* Scroll down arrow (CHEVRON) */
-
-
-@keyframes jumpInfinite {
-  0% {
-    margin-top: 0;
-    opacity: 0%;
-  }
-  60% {
-    margin-top: 20px;
-    opacity: 100%;
-  }
-  100% {
-    margin-top: 40px;
-    opacity: 0%;
-  }
-}
-
-.down-arrow {
-  text-align: center;
-  margin-top: 75vh;
-}
-.down-arrow::before {
-	border-style: solid;
-	border-width: 0.35em 0.35em 0 0;
-	content: '';
-	display: inline-block;
-	height: 1.5em;
-	left: 0;
-	top: 0;
-	transform: rotate(-45deg);
-	width: 1.5em;
-  color: white;
-  animation: jumpInfinite 1.5s infinite;
-}
-
-.down-arrow.bottom:before {
-	transform: rotate(135deg);
-}
-
-
-

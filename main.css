@@ -26,9 +26,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 p {
   font-family: "pourtexte", sans-serif;
 }
+
 button {
   background-color: #2a302a;
   border: none;
@@ -94,23 +96,28 @@ button {
 .have-sub:hover {
   border-radius: 5px 5px 0 0;
 }
+
 @keyframes subanim {
   from {
     transform: scale(1, 0);
     transform-origin: top;
   }
+
   to {
     transform: scale(1, 1);
     transform-origin: top;
   }
 }
+
 .have-sub:hover .submenu {
   display: block;
   animation: subanim 400ms;
 }
-.have-sub > a {
+
+.have-sub>a {
   pointer-events: none;
 }
+
 .submenu {
   top: 100%;
   left: 0;
@@ -153,6 +160,7 @@ body {
   from {
     transform: scale(-0.5, -0.5);
   }
+
   to {
     transform: scale(1, 1);
   }
@@ -171,16 +179,19 @@ body {
   animation-duration: 700ms;
   animation-name: title;
 }
+
 /*chevron sur l'image*/
 @keyframes jumpInfinite {
   0% {
     margin-top: 0;
     opacity: 0%;
   }
+
   60% {
     margin-top: 20px;
     opacity: 100%;
   }
+
   100% {
     margin-top: 40px;
     opacity: 0%;
@@ -191,6 +202,7 @@ body {
   text-align: center;
   margin-top: 75vh;
 }
+
 .down-arrow::before {
   border-style: solid;
   border-width: 0.35em 0.35em 0 0;
@@ -215,6 +227,17 @@ body {
   margin: auto;
   padding-bottom: 20px;
   scroll-margin-top: 70px;
+  
+}
+.synopsis p {
+  padding-top: 5px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.synopsis p:first-child {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 /* Votre aventure en image */
@@ -277,6 +300,7 @@ iframe {
 #second {
   scroll-margin-top: 70px;
 }
+
 #second article {
   scroll-margin-top: 70px;
   margin: 25px auto;
@@ -288,6 +312,7 @@ iframe {
   width: calc(70% - 6px);
   padding: 15px;
 }
+
 #second article h2 {
   margin: 10px 0;
   font-family: "pourtitre", sans-serif;
@@ -299,6 +324,7 @@ iframe {
   font-family: "pourtitre", sans-serif;
   font-size: 16px;
 }
+
 #second p {
   font-size: 20px;
   margin: 30px 0;
@@ -309,7 +335,8 @@ iframe {
 article#salle1 {
   flex-direction: column;
 }
-#second article > div:first-child:not(#salle1 div) {
+
+#second article>div:first-child:not(#salle1 div) {
   margin-right: 15px;
 }
 
@@ -321,20 +348,24 @@ article#salle1 {
 
 .art-img img {
   height: 100%;
-  width: min(35vw, 390px);
+  width: min(35vw, 300px);
   object-fit: cover;
+  object-position: bottom;
   border-radius: 5px;
 }
+
 .three-imgs-container {
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
+
 .three-imgs-container img:not(.three-imgs-container img:last-child) {
   margin-right: 40px;
 }
+
 .three-imgs-container img {
-  height: 200px;
+  height: 220px;
   width: fit-content;
   flex: 1 1;
 }
@@ -409,7 +440,7 @@ article#salle1 {
   object-fit: cover;
 }
 
-.info > div {
+.info>div {
   margin: auto 0 auto 10px;
 }
 
@@ -449,6 +480,7 @@ footer {
   background-color: #1a1818;
   color: white;
 }
+
 footer p {
   padding-top: 10px;
 }
@@ -458,6 +490,7 @@ footer p {
   font-family: "pourtitre";
   src: url("res/font/stpf.ttf");
 }
+
 @font-face {
   font-family: "pourtexte";
   src: url("res/Steampunk.otf");
@@ -465,42 +498,51 @@ footer p {
 
 /* Mini responsive */
 @media screen and (max-width: 1100px) {
+
   .card2,
   .col1,
   img[alt="illu1-3"] {
     display: none !important;
   }
+
   img[alt="illu1-2"] {
     margin-right: 0 !important;
   }
+
   .synopsis,
   #third {
     width: 85% !important;
   }
+
   #second article {
     width: calc(85% - 6px) !important;
   }
 }
 
 @media screen and (max-width: 700px) {
+
   .showMore,
   .card3,
   img[alt="illu1-2"] {
     display: none !important;
   }
+
   img[alt="illu1-1"] {
     margin-right: 0 !important;
   }
+
   .synopsis,
   #third {
     width: 95% !important;
   }
+
   #second article {
     width: calc(95% - 6px) !important;
   }
 }
 
 @media screen and (max-width: 500px) {
+
   img[alt="illu1-2"],
   .col4,
   .art-img:not(.three-imgs-container) {
@@ -508,6 +550,7 @@ footer p {
   }
 }
 
+/* CSS resets */
 /* CSS resets */
 html,body,div,span,applet,object,iframe,
 h1,h2,h3,h4,h5,h6,

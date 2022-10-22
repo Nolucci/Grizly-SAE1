@@ -336,8 +336,21 @@ footer {
 }
 
 #second h2 {
+  margin: 10px 0;
   font-family: 'pourtitre', sans-serif;
   font-size:26px;
+}
+
+#second p {
+  margin: 30px 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#second h4 {
+  margin: 10px 0;
+  font-family: 'pourtitre', sans-serif;
+  font-size:16px;
 }
 
 /* Synopsis */
@@ -469,6 +482,10 @@ ol,
 ul {
   list-style: none;
 } 
+
+footer a {
+  color:white
+}
 
 
 /* Scroll down arrow (CHEVRON) */
